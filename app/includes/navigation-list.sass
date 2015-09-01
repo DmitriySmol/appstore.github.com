@@ -1,0 +1,31 @@
+@import "../_mics/mixins"
+
+.navigation-line
+  width: 100%
+  background-color: #F7F7F7
+  border-bottom: 1px solid #E3E3E3 
+
+.navigation-line__navigation
+  width: 1000px
+  color: #5C7B98
+  margin: 0 auto
+  padding: 0
+  height: 40px
+  background-color: #F7F7F7 
+  line-height: 40px 
+  &:first-child:
+    background-image: none
+.navigation-items
+  list-style: none
+  margin-left: -5px
+  display: inline-block
+  padding-left: 15px
+  padding-right: 25px
+  background-image: url(../img/geom.png) right 0 no-repeat
+  font-size: 15px
+  &:hover
+    background-color: #DCE6F0
+
+.navigation-links
+  position: relative
+  left: -5px

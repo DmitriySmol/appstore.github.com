@@ -1,0 +1,243 @@
+doctype html
+html(lang='ru-RU')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='author', content='Dmitriy Smolyarenko')
+    title 3. Page
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory  
+    link(rel='stylesheet', type='text/css', href='css/shop.css')
+    link(rel='stylesheet', type='text/css', href='css/stylesheet.css')
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel="stylesheet" href="font/font.css")
+  body
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    .wrapper
+        header.header
+          .adress-center
+            .social-top
+              ul.social-top__ul
+                li.social-top__li
+                  img.social-top__icons-img(src='img/vk-top.png', height='20', width='21', alt='Vk')
+                li.social-top__li
+                  img.social-top__icons-img(src='img/fb-top.png', height='20', width='21', alt='fb')
+                li.social-top__li
+                  img.social-top__icons-img(src='img/tw-top.png', height='20', width='22', alt='tw')
+            .adress-location
+              img.adress-location__map-location-img(src='img/map-location.png', height='22', width='16', alt='location')
+              .adress-location__text г. Москва, ул. Новая 24б, офис 214
+            a(href="tel:+79213221232").phone-number 
+              .phone-number__4-numbers +7 (921) 
+              .phone-number__7-numbers 322 12 32
+        .gradient-background      
+          nav.buy-info.clearfix
+            .buy-info__logo-big
+              .buy-info__logo-text ЭпплShop
+              img.logo-big__logo-big-img(src="img/apple-shop-top.png", alt="ЭпплShop")
+            .buy-info__form-search
+              form.form-search__form(name="search-item", method="post")
+                input.form-search__input-item-name(type="text", name="item-name", placeholder="")
+                input.form-search__input-submit-search(type="submit", name="item-search", value="Поиск")
+            ul.buy-info__ul-nav
+              li.ul-nav__links-wrapper-first
+                a.ul-nav__link(href="") Карта проезда
+              li.ul-nav__links-wrapper
+                a.ul-nav__link(href="") История заказов
+              li.ul-nav__links-wrapper-last-link
+                a.ul-nav__links-wrapper-last-link-a(href="") 
+                  .ul-nav__sprite
+                    .sprite.sprite-chip-basket-no-effect
+                  .ul-nav__chip-basket Корзина (3)
+                ul.invisibil-list
+                  li.invisibil-list__li
+                    a(href="").invisibil-list__wrapper-for-img  
+                      img(src="img/iphone-5.png", alt="iphone-5").invisibil-list__wrapper-img 
+                    a(href="").invisibil-list__text iPhone 6
+                  li.invisibil-list__li.invisibil-list__li-nth-child-2n
+                    a(href="").invisibil-list__wrapper-for-img  
+                      img(src="img/ipad.png", alt="ipad").invisibil-list__wrapper-img
+                    a(href="").invisibil-list__text iPad Air Wi-fi + Cellular 128GB - Silver            
+                  li.invisibil-list__li
+                    a(href="").invisibil-list__wrapper-for-img  
+                      img(src="img/macbook-air.png", alt="macbook-air").invisibil-list__wrapper-img
+                    a(href="").invisibil-list__text Macbook Air
+        .navigation-line
+          nav.nav-items
+            ul.navigation-line__navigation  
+              li.navigation__items.navigation-items-1
+                .navigation__triangle-first-child
+                a(href="").navigation__links Мобильные телефоны
+                  .navigation__triangle
+              li.navigation-items-2.navigation-items-blue
+                a(href="").navigation-links-blue Планшеты
+                  .navigation-triangle-blue
+              li.navigation__items.navigation-items-3
+                a(href="").navigation__links Mp3 плееры
+                  .navigation__triangle
+              li.navigation__items.navigation-items-4 
+                a(href="").navigation__links Персональные компьютеры
+                  .navigation__triangle
+              li.navigation__items.navigation-items-5 
+                a(href="").navigation__links Ноутбуки
+                .navigation__triangle
+              li.navigation__items.navigation-items-6 
+                a(href="").navigation__links Apple TV
+                .navigation__triangle
+              li.navigation__items.navigation-items-7 
+                a(href="").navigation__links Аксессуары
+                .navigation__triangle
+        article.main
+          .main__navigation-result
+            a(href="index.html").navigation-result__link-to-main Главная
+            |  >   
+            a(href="catalog.html").navigation-result__link-to-main Каталог
+            |  >   IPad Air Wi-Fi + Cellular 128GB - Silver 
+          .main__slider-wrapper.clearfix  
+            .main__slider.slider
+              .slider__wrapper-main-pic
+                img(src="img/iphone-4.png", alt="iPad").slider__main-pic
+              .slider__wrapper-sliding-images
+                a(href="").slider__previos-button.button
+                  .sprite.sprite-back-button
+                a(href="").slider__next-button.button
+                  .sprite.sprite-forward-button     
+                .slider__window-slider.clearfix
+                  ul.main__slider-sliding-pictures.clearfix
+                    li.slider__iphone-png.active
+                      a(href='#').main__slider-sliding-pictures-links
+                        img(src="img/iphone-4.png", alt="ipad").slider__img
+                    li.slider__iphone-png
+                      a(href='#').main__slider-sliding-pictures-links
+                        img(src="img/air-scene-2.png", alt="ipad").slider__img
+                    li.slider__iphone-png
+                      a(href='#').main__slider-sliding-pictures-links
+                        img(src="img/air-scene-3.png", alt="ipad").slider__img
+                    li.slider__iphone-png
+                      a(href='#').main__slider-sliding-pictures-links
+                        img(src="img/air-scene-4.png", alt="ipad").slider__img
+                    li.slider__iphone-png
+                      a(href='#').main__slider-sliding-pictures-links
+                        img(src="img/air-scene-5.png", alt="ipad").slider__img                  
+            .main__table-characteristics
+              .table-characteristics__header-of-item IPad Air Wi-Fi + Cellular 128GB - Silver
+              table.table-characteristics__table
+                tr.table-characteristics__table-row
+                  td Артикул 
+                  td 25462156
+                tr.table-characteristics__table-row-grey
+                  td Опция
+                  td Включена
+                tr.table-characteristics__table-row
+                  td Цвет
+                  td серебристый
+                tr.table-characteristics__table-row-grey
+                  td Размер
+                  td 1280*1245*90
+                tr.table-characteristics__table-row
+                  td Вес
+                  td 200 гг
+                tr.table-characteristics__table-row-grey
+                  td Артикул 
+                  td 42787825
+                tr.table-characteristics__table-row
+                  td Опция
+                  td Включена
+                tr.table-characteristics__table-row-grey
+                  td Цвет
+                  td серебристый
+                tr.table-characteristics__table-row
+                  td Размер
+                  td 1280*1245*90
+                tr.table-characteristics__table-row-grey
+                  td Вес
+                  td 200 гг
+          .main__about-shop
+            .about-shop__Header-about-shop
+              | Пара слов о магазине
+            .about-shop__columns  
+              p.about-shop__column1-2-3
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque atque itaque doloremque in accusamus voluptate assumenda voluptatem obcaecati, natus at nulla possimus repellendus necessitatibus reprehenderit soluta quos delectus eos sunt? Natus eligendi consectetur nisi mollitia. A autem eum itaque assumenda quae quos nemo nesciunt impedit ratione accusamus, modi, corrupti natus.
+              p.about-shop__column1-2-3
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, accusamus quos odio enim ipsum eligendi porro quam accusantium dolor maxime dolore similique facilis, earum sapiente deserunt expedita culpa voluptatum suscipit iure modi velit? Aut nihil corporis praesentium iusto, sapiente nostrum, architecto similique esse commodi sint ab eaque placeat at?
+              p.about-shop__column1-2-3
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas accusamus, a officia necessitatibus adipisci aliquam quos consectetur sed. Sunt repudiandae, quam. Eum autem veniam, aperiam ex. Consequatur error veritatis voluptates quam voluptas, vel doloribus aut beatae sunt facere ipsa, incidunt iste illo eos cupiditate iure voluptate repellat, veniam ut qui?
+        footer.footer-big
+          .footer-centralize
+            .logo-white
+              img(src="img/aple-shop-little.png", alt="Apple-shop").logo-white-img
+            .info-about-shop
+              .info-about-shop__about-shop-list
+                ul.info-about-shop__catalog-ul
+                  li.info-about-shop__about-shop-ul-li-header О магазине
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links О нас
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Наши цены
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Наши скидки
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Акции
+              .info-about-shop__about-shop-list
+                ul.info-about-shop__catalog-ul
+                  li.info-about-shop__about-shop-ul-li-header Каталог
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Смартфоны
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Планшеты
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Компьютеры
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Аксессуары
+              .info-about-shop__about-shop-list
+                ul.info-about-shop__catalog-ul
+                  li.info-about-shop__about-shop-ul-li-header Контакты
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Смартфоны
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Планшеты
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Компьютеры
+                  li.info-about-shop__about-shop-ul-li
+                    a(href="").info-about-shop__links Аксессуары
+            .App-store-and-soc
+              .App-store-and-soc-float.clearfix
+                a(href="").App-store-and-soc__App-store
+                  img(src="img/app-store.png", alt="App-store")
+                a(href="").App-store-and-soc__google
+                  img(src="img/google-play.png", alt="Google-play")
+              .social-bottom
+                ul.social-bottom__ul
+                  li.social-bottom__ul-li
+                    a(href="").social-bottom__ul-li
+                      .sprite.sprite-vk
+                  li.social-bottom__ul-li
+                    a(href="").social-bottom__ul-li
+                      .sprite.sprite-fb
+                  li.social-bottom__ul-li
+                    a(href="").social-bottom__ul-li
+                      .sprite.sprite-tw
+        a(href="#").scroll Наверх
+          img(src="img/scroll-1.png", alt="").scroll__img
+          img(src="img/scroll-2.png", alt="").scroll__img-white
+
+
+
+
+    script(src='../bower_components/jquery/dist/jquery.min.js')    
+    script(src="../js/jquery.columnizer.js")
+    
+    script(src='../js/plugins.js')
+    script(src='../js/main.js')
+    script(src="../js/slider.js")
+    script(src="../js/up.js")
+      
